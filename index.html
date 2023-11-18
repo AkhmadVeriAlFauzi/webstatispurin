@@ -12,255 +12,338 @@
         margin: 0;
         padding: 0;
     }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: normal;
+    }
 </style>
 
-<body style="background-color: white;">
+<body style="background-color: white; font-family: sans-serif;">
 
     <header>
         <div style=" 
-            display:flex; 
-            background-color: #FDCEDF; 
+            display:flex;
+            justify-content: start;
+            align-items: center; 
+            background-color: skyblue; 
             height: 75px; 
-            flex-wrap:wrap; 
-            padding-left: 10px; 
-            padding-right: 10px;
-            font-family: sans-serif;
             ">
 
-            <img src="./aset/logopurin.png" alt="" style="height: 50px; padding-top: 10px;">
+            <img src="./aset/logopurin.png" height="50">
 
-            <h3 style="
-            padding-top: 7px;
-            margin-left: 20px;
-            ">Purwahamba Indah</h3>
-
-            <a href="#Home" style="
-            color: black;
-            text-decoration: none;
-            margin-left: 570px;
-            margin-top: 20px;
-            padding-top: 8px;
-            ">
-                Home
-            </a>
-
-            <a href="#Wisata" style="
-            color: black;
-            text-decoration: none;
-            margin-left: 20px;
-            margin-top: 20px;
-            padding-top: 8px;
-            ">
-                Wisata
-            </a>
-
-            <a href="#Informasi" style="
-            color: black;
-            text-decoration: none;
-            margin-left: 20px;
-            margin-top: 20px;
-            padding-top: 8px;
-            ">
-                Informasi
-            </a>
+            <h3>Purwahamba Indah</h3>
 
         </div>
     </header>
 
-    <div style="
-        overflow: hidden; 
-        height: 550px;
+    <nav>
+        <div style="display:flex; 
+        background-color: white; 
+        height: 75px; 
+        flex-wrap:wrap; 
+        padding-left: 10px; 
+        padding-right: 10px;
+        font-family: sans-serif;">
+            <a href="#Home" style="
+                color: black;
+                text-decoration: none;
+                margin-left: 950px;
+                margin-top: 20px;
+                padding-top: 8px;
+                font-family: sans-serif;
+                font-size: large;
+                ">
+                Home
+            </a>
+
+            <a href="#Content" style="
+                color: black;
+                text-decoration: none;
+                margin-left: 20px;
+                margin-top: 20px;
+                padding-top: 8px;
+                font-family: sans-serif;
+                font-size: large;
+                ">
+                Content
+            </a>
+
+            <a href="#About" style="
+                color: black;
+                text-decoration: none;
+                margin-left: 20px;
+                margin-top: 20px;
+                padding-top: 8px;
+                font-family: sans-serif;
+                font-size: large;
+                ">
+                About
+            </a>
+        </div>
+    </nav>
+
+    <section id="Home">
+        <div style="
+            overflow: hidden; 
+            height: 550px;
+            ">
+
+            <img style="
+                position: absolute ;
+                width: 100%;
+                height: 550px;
+                z-index: -20;" src="./aset/senjapurin.jpeg" alt="">
+
+        </div>
+
+        <div style="
+            padding-left: 20px; font-family: sans-serif;
+            padding-bottom: 15px;">
+
+            <h1 style=" 
+            color: black; 
+            text-align: center;">
+                Selamat Datang Di Purwahamba Indah </h1>
+
+            <p style="color: black; text-align: center; ">
+                <i>Berwisata Bersama Anggota Keluarga Memanglah Menyenangkan, <br>
+                    Ayo Ke <b>Purin</b> Bersama Seluruh Keluargamu.</i>
+
+            </p>
+
+        </div>
+    </section>
+
+    <section id="Content">
+
+        <div style="
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 15px;
+        
         ">
 
-        <img style="
-            position: absolute ;
-            width: 100%;
-            height: 550px;
-            z-index: -20;" src="./aset/senjapurin.jpeg" alt="">
+            <!-- card wisata start -->
+            <div style="
+        background-color: whitesmoke;  
+        width: 98%;
+        height: auto; 
+        text-align: center;
+        border-radius: 20px;
+        padding-bottom: 20px;
+        ">
+                <h4 style="font-family: sans-serif;"><b>Pantai</b></h4>
+                <img src="./aset/pantai-purwahamba-indah.jpg" alt="pantai" style="
+                height: auto; 
+                width: 300px; 
+                object-fit: cover; 
+                border-radius: 20px;">
+                <p style="font-family: sans-serif;">Menghabiskan waktu di pantai selalu membuat kamu merasa segar dan
+                    rileks. <br> Pantai ini adalah tempat yang cocok untuk berjalan-jalan di tepi air. Suara ombak yang
+                    tenang <br> di pantai ini sangat menenangkan. Saat matahari terbenam di ufuk.</p>
 
-    </div>
+                <a href="#selengkapnya" style=" 
+                text-decoration: none; 
+                font-family: sans-serif;">
+                    Lihat Selengkapnya
+                </a>
 
-    <div style="
-        padding-left: 20px; font-family: sans-serif;
-        padding-bottom: 15px;">
-
-        <h1 style=" 
-        color: black; 
-        text-align: center;">
-            Selamat Datang Di Purwahamba Indah </h1>
-
-        <p style="color: black; text-align: center; ">
-            <i>Berwisata Bersama Anggota Keluarga Memanglah Menyenangkan, <br>
-                Ayo Ke <b>Purin</b> Bersama Seluruh Keluargamu.</i>
-
-        </p>
-
-    </div>
-
-    <div style="
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    padding-left: 15px;
-    
-    ">
-
-        <!-- card wisata start -->
-        <div style="
-    background-color: whitesmoke;  
-    width: 98%;
-    height: auto; 
-    text-align: center;
-    border-radius: 20px;
-    padding-bottom: 20px;
-    ">
-            <h4 style="font-family: sans-serif;"><b>Pantai</b></h4>
-            <img src="./aset/pantai-purwahamba-indah.jpg" alt="pantai" style="
-            height: auto; 
-            width: 300px; 
-            object-fit: cover; 
-            border-radius: 20px;">
-            <p style="font-family: sans-serif;">Menghabiskan waktu di pantai selalu membuat kamu merasa segar dan
-                rileks. <br> Pantai ini adalah tempat yang cocok untuk berjalan-jalan di tepi air. Suara ombak yang
-                tenang <br> di pantai ini sangat menenangkan. Saat matahari terbenam di ufuk.</p>
-
-            <a href="#selengkapnya" style=" 
-            text-decoration: none; 
-            font-family: sans-serif;">
-                Lihat Selengkapnya
-            </a>
-
-        </div>
+            </div>
 
 
-        <div style="
-    background-color: whitesmoke; 
-    width: 98%;
-    height: auto; 
-    text-align: center;
-    border-radius: 20px;
-    padding-bottom: 20px;
-    ">
-            <h4 style="font-family: sans-serif;"><b>Kolam Renang</b></h4>
-            <img src="./aset/kolam renang.jpg" alt="kolamrenang " style="
-            height: auto; 
-            width: 300px; 
-            object-fit: cover; 
-            border-radius: 20px;">
-            <p style="font-family: sans-serif;">Ketika suhu panas, tidak ada yang lebih menyegarkan daripada melompat ke
-                dalam <br> kolam renang. Saat matahari bersinar terang, kolam renang ini terlihat sangat menggoda. <br>
-                Saat malam tiba, kolam renang ini terlihat indah dengan cahaya lampu bawah air.</p>
+            <div style="
+        background-color: whitesmoke; 
+        width: 98%;
+        height: auto; 
+        text-align: center;
+        border-radius: 20px;
+        padding-bottom: 20px;
+        ">
+                <h4 style="font-family: sans-serif;"><b>Kolam Renang</b></h4>
+                <img src="./aset/kolam renang.jpg" alt="kolamrenang " style="
+                height: auto; 
+                width: 300px; 
+                object-fit: cover; 
+                border-radius: 20px;">
+                <p style="font-family: sans-serif;">Ketika suhu panas, tidak ada yang lebih menyegarkan daripada
+                    melompat ke
+                    dalam <br> kolam renang. Saat matahari bersinar terang, kolam renang ini terlihat sangat menggoda.
+                    <br>
+                    Saat malam tiba, kolam renang ini terlihat indah dengan cahaya lampu bawah air.
+                </p>
 
-            <a href="#selengkapnya" style=" 
-            text-decoration: none; 
-            font-family: sans-serif;">
-                Lihat Selengkapnya
-            </a>
+                <a href="#selengkapnya" style=" 
+                text-decoration: none; 
+                font-family: sans-serif;">
+                    Lihat Selengkapnya
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
-    <!-- card wisata end -->
+        <div style="
+        background-color: whitesmoke; 
+        width: 98%;
+        height: 500px; 
+        text-align: center;
+        border-radius: 20px;
+        margin-top: 30px;
+        margin-left: 15px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        ">
+            <div>
+                <h4 style="font-family: sans-serif; font-size: large;"><b>Informasi</b></h4>
+                <p style="font-family: sans-serif; font-size: large;">Pantai Purwahamba Indah atau dikenal juga dengan
+                    Pantai Purin
+                    terletak
+                    di jalur utama pantura kota Tegal menuju Semarang, tepatnya di Jl. Raya Tegal – Pemalang Km. 14.
+                    <br>
+                    Tak hanya panorama pantai dan laut utara Jawa, Pantai Purin juga menyediakan fasilitas beragam
+                    permainan
+                    anak, antara lain waterboom, sepeda air, dan kereta mini. <br> Patung dinosaurus berukuran raksasa
+                    di
+                    dekat pintu gerbang menjadi ciri khas pantai ini.
+                </p>
+            </div>
+            <!-- card wisata end -->
+            <div style="padding-top: 20px;">
+                <style>
+                    /* Gaya untuk Tabel */
+                    table {
+                        border-collapse: collapse;
+                        width: 60%;
+                        margin: 20px auto;
+                    }
 
-    <div style="
-    background-color: whitesmoke; 
-    width: 98%;
-    height: 150px; 
-    text-align: center;
-    border-radius: 20px;
-    margin-top: 30px;
-    margin-left: 15px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    ">
-        <div;">
-            <h4 style="font-family: sans-serif;"><b>Informasi</b></h4>
-            <p style="font-family: sans-serif;">Pantai Purwahamba Indah atau dikenal juga dengan Pantai Purin terletak
-                di jalur utama pantura kota Tegal menuju Semarang, tepatnya di Jl. Raya Tegal – Pemalang Km. 14. <br>
-                Tak hanya panorama pantai dan laut utara Jawa, Pantai Purin juga menyediakan fasilitas beragam permainan
-                anak, antara lain waterboom, sepeda air, dan kereta mini. <br> Patung dinosaurus berukuran raksasa di
-                dekat pintu gerbang menjadi ciri khas pantai ini.</p>
-    </div>
+                    th,
+                    td {
+                        border: 1px solid black;
+                        padding: 8px;
+                        text-align: center;
+                    }
 
-    <div style="padding-top: 20px;">
-        <style>
-            /* Gaya untuk Tabel */
-            table {
-                border-collapse: collapse;
-                width: 60%;
-                margin: 20px auto;
-            }
+                    th {
+                        background-color: #f2f2f2;
+                    }
+                </style>
 
-            th,
-            td {
-                border: 1px solid black;
-                padding: 8px;
+                <h4 style="font-family: sans-serif; text-align: center;"></h4>
+                <table>
+                    <!-- Baris Header Tabel -->
+                    <tr>
+                        <th>No.</th>
+                        <th>Wisata</th>
+                        <th>Kategori Pengunjung</th>
+                        <th>Harga Tiket</th>
+                    </tr>
+                    <!-- Baris Data Tabel -->
+                    <tr>
+                        <td>1</td>
+                        <td>Pantai Purin</td>
+                        <td>Dewasa</td>
+                        <td>Rp. 10.000</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Pantai Purin</td>
+                        <td>Anak-anak</td>
+                        <td>Rp. 5.000</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Kolam Renang</td>
+                        <td>Dewasa</td>
+                        <td>Rp. 30.000</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Kolam Renang</td>
+                        <td>Anak-anak</td>
+                        <td>Rp. 20.000</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        
+
+        <div style="display: flex; justify-content: center; background-color: whitesmoke; height: 350px; margin: 50px;">
+            <form id="myForm" style="display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%; background-color: aqua;">
+                <h1>Kritik & Saran</h1>
+                <input type="text" id="name" name="name" required placeholder="name" style="height: 50px; width: 500px; font-size: large; text-align: center;">
+                <input type="email" id="email" name="email" required placeholder="email" style="margin: 10px; height: 50px; width: 500px; font-size: large; text-align: center;">
+                <input type="saran" name="saran" id="saran" required placeholder="saran" style="height: 50px; width: 500px; font-size: large; text-align: center;">
+                <button type="button" onclick="saveFormData()" style="margin: 10px; height: 50px; width: 500px; font-size: large; ">Submit</button>
+            </form>
+        </div>
+
+        <!-- <style>
+            input::placeholder {
                 text-align: center;
             }
+        </style> -->
+            <script>
+                // Function to save form data to the console
+                function saveFormData() {
+                    // Get form values
+                    var name = document.getElementById('name').value;
+                    var email = document.getElementById('email').value;
+                    var saran = document.getElementById('saran').value;
 
-            th {
-                background-color: #f2f2f2;
-            }
-        </style>
+                    // Create an object to store form data
+                    var formData = {
+                        'name': name,
+                        'email': email,
+                        'saran': saran
+                    };
 
-        <h4 style="font-family: sans-serif; text-align: center;">Tabel Wisata Pantai Purin</h4>
-        <table>
-            <!-- Baris Header Tabel -->
-            <tr>
-                <th>No.</th>
-                <th>Wisata</th>
-                <th>Kategori Pengunjung</th>
-                <th>Harga Tiket</th>
-            </tr>
-            <!-- Baris Data Tabel -->
-            <tr>
-                <td>1</td>
-                <td>Pantai Purin</td>
-                <td>Dewasa</td>
-                <td>Rp. 10.000</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Pantai Purin</td>
-                <td>Anak-anak</td>
-                <td>Rp. 5.000</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Kolam Renang</td>
-                <td>Dewasa</td>
-                <td>Rp. 30.000</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Kolam Renang</td>
-                <td>Anak-anak</td>
-                <td>Rp. 20.000</td>
-            </tr>
-        </table>
-    </div>
+                    // Log the form data to the console
+                    console.log('Form Data:', formData);
+                }
+            </script>
 
-    </div>
-
-    <div style="padding-left: 70px;">
-        <p>Kritik Purin</p>
-        <form action="/action_page.php" method="get">
-            <label for="name">Your Name <br></label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="masukan">Kritik <br></label>
-            <input type="text" id="lname" name="lname"><br><br>
-            <input style="background-color: blue; color: white;" type="submit" value="Kirim">
-        </form>
-    </div>
+    </section>
 
 
-    <footer style="
-    background-color: whitesmoke;
-    height: 75px; 
+    <section id="About" style="
+    background-color: skyblue;
+    height: 250px; 
+    padding-top: 30px;
     font-family: sans-serif; 
-    text-align: center;">
-        <h5 style="padding-top: 30px;">veri@copyright 2023.</h5>
-    </footer>
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;">
+        <div>
+            <h1>Contact Us</h1>
+            <h4>Call Center (Mon-Sun, 6.00 am-6.00 pm): +62877 7031 7186</h4>
+            <h4>Email : <a href="https://visitjawatengah.jatengprov.go.id/id/destinasi-wisata/pantai-purwahamba-indah"
+                    style="text-decoration: none; color: black;">purwahambaindah.co.id</a></h4>
+            <h4>Email : <a href="https://visitjawatengah.jatengprov.go.id/id/destinasi-wisata/pantai-purwahamba-indah"
+                    style="text-decoration: none; color: black;">purwahambaindah.co.id</a></h4>
+        </div>
+        <div>
+            <h1>About Us</h1>
+            <h4>Purin merupakan sebuah destinasi wisata yang menarik yang menggabungkan <br> keindahan pantai dan
+                kenyamanan kolam renang. Pantai di Purin menawarkan <br> pemandangan yang memukau dengan pasir putih
+                yang lembut dan air laut <br> yang jernih. Suara ombak yang tenang menciptakan atmosfer yang
+                menenangkan, <br> memberikan pengunjung pengalaman santai dan menyegarkan.</h4>
+        </div>
+        <div style="display: flex; flex-direction: column;">
+            <h1>Social Media</h1>
+            <a href="" style="text-decoration: none; color: black;">Instagram</a>
+            <a href="" style="text-decoration: none; color: black; padding-top: 10px;">Facebook</a>
+            <a href="" style="text-decoration: none; color: black; padding-top: 10px;">WhatsApp</a>
+        </div>
+    </section>
 
+    <script src="/index.js"></script>
 </body>
 
 </html>
